@@ -1,0 +1,93 @@
+*{
+    font-family: serif;
+}
+
+#header{
+background-color: black;
+color: #FFD700;
+margin-left: auto;
+margin-right: auto;
+padding: 0px;
+height: 100px;
+width: auto;
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+}
+
+#nav-title{
+    font-weight: bold;
+    font-size: 45px;
+    color:#FFD700;
+    padding-right: 15px;
+}
+
+#SW_logo{
+    height: 75px;
+}
+
+#sign_in{
+    height: 50px;
+    width: 100px;
+}
+
+#Show_bar{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Varieties {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1235px;
+    list-style: none;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black;
+    color: #FFD700;
+    align-items: center;
+}
+
+h3 {
+    font-style: italic;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+}
+
+#main_container {
+    height: 0px;
+    width: 1235px;
+    background-color: black;
+    color: #FFD700;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.inner_containers{
+    height: 385px;
+    background-color: black;
+    color: #FFD700;
+    border-color: white;
+    border-radius: 2px;
+    margin-bottom: 10px;
+}
+
+h2{
+    color: #FFD700;
+    font-size: 21px;
+    margin: 0;
+}
+
+#Show_logos{
+    height: 279px;
+    display: flex;
+    justify-content: center;
+}
+
+p{
+    font-size: large;
+
+}
+

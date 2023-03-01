@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Show</title>
+</head>
+<body>
+    <h1>May The Force be with you, {{user.first_name}}!</h1>
+    <a href="/dashboard">Dashboard</a>
+    <a href="/logout">Logout</a>
+
+    
+    {% for show in shows %}
+    <h1>Name:{{show.name}}</h1>
+    <p>Description:{{show.description}}</p>
+    <img src="{{url_for('static', filename=show.image)}}" />
+    
+    <a href="/destroy_show/{{show.id}}">Delete</a>
+    {% endfor %}
+
+</body>
+</html>

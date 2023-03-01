@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Wars Shows Ranked</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+</head>
+</head>
+<body>
+    <div id="header">
+        <img id="SW_logo" src= "{{url_for('static', filename='Star_Wars_Logo.png')}}" alt="Star Wars Logo">
+        <h1 id="nav-title">Star Wars TV Shows Ranked!</h1>
+        <h3>May The Force be with you, {{user.first_name}}!</h3> 
+        <form action="/show_show">
+            <a href="/show_show">My Shows!</a>
+        </form>
+        <img id="SW_logo" src="{{url_for('static', filename='713-7138867_imperial-symbol-star-wars-clipart-star-wars-galactic.png')}}" alt="sign in icon">
+    </div>
+    <div id="Show_bar">
+        <ul class="Varieties">
+            <li>Andor</li>
+            <li>The Mandalorian</li>
+            <li>Obi-Wan Kenobi</li>
+            <li>The Book of Boba Fett</li>
+            <li>Clone Wars</li>
+            <li>The Bad Batch</li>
+            <li>Rebels</li>
+            <li>Visions</li>
+        </ul>
+    </div>
+    <div>
+        <h3>Star Wars is beloved by many fans. These rankings are based solely on their scores received from Rotten Tomatoes</h3>
+    </div>
+    <div id="main_container">
+        <div class="inner_containers">
+            <h2>#8. The Book of Boba Fett (2021)</h2>
+            <div>
+                <img onmouseover="changePic(this)" onmouseout="changePic(this)" id="Show_logos" src="{{url_for('static', filename='boba_fett.jpg')}}" alt="Book of Boba Fett Logo">
+                <form action="/add_show", method="post">
+                    <input type="hidden" name="show_id" value="3">
+                    <button>Add Show To My Favorites</button>
+                </form>
+                <p>On the sands of Tatooine, bounty hunter Boba Fett and mercenary Fennec Shand navigate the Galaxy's underworld and fight for Jabba the Hutt's old territory.</p>
+            </div>
+        </div>
+        <div class="inner_containers">
+            <h2>#7. Obi-Wan Kenobi (2022)</h2>
+            <img onmouseover="changePic2(this)" onmouseout="changePic2(this)" id="Show_logos" src="{{url_for('static', filename='obi-wan.jpg')}}" alt="Obi-Wan Kenobi Logo">
+            <form action="/add_show", method="post">
+                <input type="hidden" name="show_id" value="4">
+                <button>Add Show To My Favorites</button>
+            </form>
+            <p>The Jedi Master contends with the consequences of his greatest defeat -- the downfall and corruption of his one-time friend and apprentice, Anakin Skywalker, who turned to the dark side as evil Sith Lord Darth Vader.</p>
+        </div>
+        <div class="inner_containers">
+            <h2>#6. The Bad Batch (2021)</h2>
+            <img onmouseover="changePic3(this)" onmouseout="changePic3(this)" id="Show_logos" src="{{url_for('static', filename='bad_batch.jpg')}}" alt="Bad Batch Logo">
+            <form action="/add_show", method="post">
+                <input type="hidden" name="show_id" value="5">
+                <button>Add Show To My Favorites</button>
+            </form>
+            <p>Members of a unique squad of clones find their way in a changing galaxy in the aftermath of the Clone War.</p>
+        </div>
+        <div class="inner_containers">
+            <h2>#5. The Clone Wars (2008)</h2>
+            <img onmouseover="changePic4(this)" onmouseout="changePic4(this)" id="Show_logos" src="{{url_for('static', filename='clone-wars.jpg')}}" alt="Clone Wars Logo">
+            <form action="/add_show", method="post">
+                <input type="hidden" name="show_id" value="6">
+                <button>Add Show To My Favorites</button>
+            </form>
+            <p>The first weekly TV series from Lucasfilm Animation chronicles the adventures of Anakin Skywalker, Yoda, Obi-Wan Kenobi and other popular characters from the "Star Wars" universe during the violent Clone Wars, as dwindling numbers of Jedi knights struggle to restore peace.</p>
+        </div>
+        <div class="inner_containers">
+            <h2>#4. The Mandalorian (2019)</h2>
+            <img onmouseover="changePic5(this)" onmouseout="changePic5(this)" id="Show_logos" src="{{url_for('static', filename='mandalorian.jpg')}}" alt="The Mandalorian Logo">
+            <form action="/add_show", method="post">
+                <input type="hidden" name="show_id" value="7">
+                <button>Add Show To My Favorites</button>
+            </form>
+            <p>After the fall of the Galactic Empire, a lone gunfighter makes his way through the outer reaches of the lawless galaxy.</p>
+        </div>
+        <div class="inner_containers">
+            <h2>#3. Andor (2022)</h2>
+            <img onmouseover="changePic6(this)" onmouseout="changePic6(this)" id="Show_logos" src="{{url_for('static', filename='andor.jpg')}}" alt="Andor Logo">
+            <form action="/add_show", method="post">
+                <input type="hidden" name="show_id" value="8">
+                <button>Add Show To My Favorites</button>
+            </form>
+            <p>Rebel spy Cassian Andor's formative years of the Rebellion.</p>
+        </div>
+        <div class="inner_containers">
+            <h2>#2. Visions (2021)</h2>
+            <img onmouseover="changePic7(this)" onmouseout="changePic7(this)" id="Show_logos" src="{{url_for('static', filename='visions.jpeg')}}" alt="Visions Logo">
+            <form action="/add_show", method="post">
+                <input type="hidden" name="show_id" value="9">
+                <button>Add Show To My Favorites</button>
+            </form>
+            <p>Seven Japanese animation studios bring their unique perspectives to the "Star Wars" universe through a series of short films.</p>
+        </div>
+        <div class="inner_containers">
+            <h2>#1. Rebels (2014-2018)</h2>
+            <img onmouseover="changePic8(this)" onmouseout="changePic8(this)" id="Show_logos" src="{{url_for('static', filename='rebels.jpg')}}" alt="Rebels Logo">
+            <form action="/add_show", method="post">
+                <input type="hidden" name="show_id" value="10">
+                <button>Add Show To My Favorites</button>
+            </form>
+            <p>This animated entry in the "Star Wars" franchise fills the gap between the events of "Episode III" and "Episode IV." Imperial forces occupy a remote planet and are ruling -- and ruining -- its inhabitants' lives with an iron fist. A clever, disparate crew aboard the starship Ghost takes a stand against the Empire, facing new villains and colorful adversaries. The rebels on the Ghost include leader Kanan, ace pilot Hera, feisty heroine Sabine, tough guy Zeb and 14-year-old con artist Ezra.</p>
+        </div>
+    </div>
+    
+</body>
+
